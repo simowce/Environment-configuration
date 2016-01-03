@@ -5,5 +5,4 @@ cp ./.zshrc ~/
 cp ./.tmux.conf ~/
 cp -r ./.vim ~/
 cp -r ./.tmux ~/
-cp -r ./.oh-my-zsh ~/
-
+./oh-my-zsh/oh-my-zsh.sh
