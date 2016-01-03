@@ -1,0 +1,9 @@
+pane	0	1	:~	1	:*	1	:/home/simowce	1	zsh	:
+pane	1	1	:~/.fonts	0	:-	1	:/home/simowce/.fonts	1	zsh	:
+pane	1	2	:~	1	:*	1	:/home/simowce	1	zsh	:
+pane	os	1	:~	1	:*	1	:/home/simowce	1	zsh	:
+window	0	1	1	:*	ae5d,80x23,0,0,0
+window	1	1	0	:-	ae5e,80x23,0,0,1
+window	1	2	1	:*	ae60,80x23,0,0,3
+window	os	1	1	:*	ae61,80x23,0,0,4
+state	0	

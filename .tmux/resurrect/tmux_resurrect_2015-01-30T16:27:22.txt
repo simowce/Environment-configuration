@@ -1,0 +1,11 @@
+pane	0	1	:~	1	:*	1	:/home/simowce	1	zsh	:
+pane	2	1	:~	1	:*	1	:/home/simowce	1	zsh	:
+pane	Linux C	1	:~/Lin/test/fork	1	:*	1	:/home/simowce/Lin/test/fork	1	zsh	:vim main.c
+pane	Linux C	2	:..xt-3/Packages	0	:-	1	:/home/simowce/.config/sublime-text-3/Packages	1	zsh	:
+pane	Linux C	3	:vim	0	: 	1	:/home/simowce/Documents/Wifi/ap-hotspot-0.3	1	vim	:vim ap-hotspot
+window	0	1	1	:*	ae5d,80x23,0,0,0
+window	2	1	1	:*	ae60,80x23,0,0,3
+window	Linux C	1	1	:*	c701,124x37,0,0,4
+window	Linux C	2	0	:-	c6ff,124x37,0,0,2
+window	Linux C	3	0	: 	c703,124x37,0,0,6
+state	Linux C	0

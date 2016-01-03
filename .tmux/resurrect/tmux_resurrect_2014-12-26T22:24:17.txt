@@ -1,0 +1,13 @@
+pane	0	1	:~	1	:*	1	:/home/simowce	1	zsh	:
+pane	5	1	:~	1	:*	1	:/home/simowce	1	zsh	:
+pane	os	1	:os	0	: 	1	:/home/simowce/Code-analysis-of-orange-os/chapter9/HD driver	1	zsh	:vim
+pane	os	2	:orange	0	: 	1	:/home/simowce/Documents/orange/chapter9/a	1	zsh	:
+pane	os	3	:myblog	0	:-	1	:/home/simowce/simowce.github.com	1	zsh	:
+pane	os	4	:~/.vim/bundle	1	:*	1	:/home/simowce/.vim/bundle	1	zsh	:
+window	0	1	1	:*	575f,80x23,0,0,10
+window	5	1	1	:*	ae66,80x23,0,0,9
+window	os	1	0	: 	ae5e,80x23,0,0,1
+window	os	2	0	: 	ae5f,80x23,0,0,2
+window	os	3	0	:-	ae60,80x23,0,0,3
+window	os	4	1	:*	5ab1,120x33,0,0,12
+state	os	

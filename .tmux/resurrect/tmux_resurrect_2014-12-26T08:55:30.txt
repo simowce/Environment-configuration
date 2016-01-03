@@ -1,0 +1,6 @@
+pane	0	1	:zsh	1	:*	1	:/home/simowce/Code-analysis-of-orange-os/chapter9/HD driver	0	zsh	:
+pane	0	1	:zsh	1	:*	2	:/home/simowce	1	zsh	:
+pane	1	1	:zsh	1	:*	1	:/home/simowce	1	zsh	:
+window	0	1	1	:*	7aca,124x37,0,0{62x37,0,0,0,61x37,63,0,1}
+window	1	1	1	:*	ae5f,80x23,0,0,2
+state	0	1

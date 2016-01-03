@@ -1,0 +1,6 @@
+pane	0	1	:..tree/avl_tree	1	:*	1	:/home/simowce/Data Structure/tree/avl_tree	0	vim	:vim avl.c
+pane	0	1	:..tree/avl_tree	1	:*	2	:/home/simowce/Data Structure/tree/avl_tree	1	zsh	:
+pane	0	2	:man	0	:-	1	:/usr/share/man	1	man	:man gdb
+window	0	1	1	:*	7adc,124x37,0,0{62x37,0,0,4,61x37,63,0,5}
+window	0	2	0	:-	c700,124x37,0,0,3
+state	0	

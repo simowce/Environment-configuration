@@ -1,0 +1,15 @@
+pane	0	1	:~	1	:*	1	:/home/simowce	1	zsh	:
+pane	Linux C	1	:~/Lin/database	1	:*	1	:/home/simowce/Lin/database	1	zsh	:vim database.c
+pane	Linux C	2	:vim	0	: 	1	:/home/simowce/simowce.github.com	1	vim	:vim ./_posts/2015-02-07-vim-tips.md
+pane	Linux C	3	:..i/hostapd-2.3	0	:#	1	:/home/simowce/Documents/Wifi/hostapd-2.3	1	zsh	:
+pane	Linux C	4	:vim	0	:#	1	:/home/simowce	1	vim	:vim hostapd.log
+pane	Linux C	5	:~/Lin/alpha	0	:-	1	:/home/simowce/Lin/alpha	1	zsh	:
+pane	Linux C	6	:~/Lin/database	0	:#	1	:/home/simowce/Lin/database	1	zsh	:
+window	0	1	1	:*	c6fd,124x37,0,0,0
+window	Linux C	1	1	:*	c6fe,124x37,0,0,1
+window	Linux C	2	0	: 	c6ff,124x37,0,0,2
+window	Linux C	3	0	:#	c700,124x37,0,0,3
+window	Linux C	4	0	:#	c701,124x37,0,0,4
+window	Linux C	5	0	:-	c702,124x37,0,0,5
+window	Linux C	6	0	:#	c703,124x37,0,0,6
+state	Linux C	0

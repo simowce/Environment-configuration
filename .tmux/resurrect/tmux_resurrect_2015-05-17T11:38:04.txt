@@ -1,0 +1,6 @@
+pane	0	1	:../tree/pointer	1	:*	1	:/home/simowce/Data Structure/tree/pointer	0	zsh	:vim string.c
+pane	0	1	:../tree/pointer	1	:*	2	:/home/simowce/Data Structure/tree/pointer	1	zsh	:
+pane	0	2	:..cuments/Linux	0	:-	1	:/home/simowce/Documents/Linux	1	zsh	:
+window	0	1	1	:*	7acc,124x37,0,0{62x37,0,0,0,61x37,63,0,5}
+window	0	2	0	:-	c6ff,124x37,0,0,2
+state	0	

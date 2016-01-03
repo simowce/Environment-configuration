@@ -1,0 +1,9 @@
+pane	0	1	:~/Lin/alpha	1	:*	1	:/home/simowce/Lin/alpha	1	zsh	:
+pane	2	1	:~	1	:*	1	:/home/simowce	1	zsh	:
+pane	Linux C	1	:~/Lin/database	0	:-	1	:/home/simowce/Lin/database	1	zsh	:
+pane	Linux C	2	:..C_64bit-Debug	1	:*	1	:/home/simowce/Lin/build-just_a_test-Desktop_Qt_5_4_0_GCC_64bit-Debug	1	zsh	:
+window	0	1	1	:*	ae5d,80x23,0,0,0
+window	2	1	1	:*	ae61,80x23,0,0,4
+window	Linux C	1	0	:-	ae62,80x23,0,0,5
+window	Linux C	2	1	:*	c703,124x37,0,0,6
+state	Linux C	0

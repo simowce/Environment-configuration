@@ -1,0 +1,8 @@
+pane	0	1	:..C_64bit-Debug	1	:*	1	:/home/simowce/Lin/build-just_a_test-Desktop_Qt_5_4_0_GCC_64bit-Debug	1	zsh	:
+pane	Linux C	1	:~/Lin/database	0	:-	1	:/home/simowce/Lin/database	1	zsh	:
+pane	Linux C	2	:~/Lin	1	:*	1	:/home/simowce/Lin/build-just_a_test-Desktop_Qt_5_4_0_GCC_64bit-Debug	0	vim	:vim log
+pane	Linux C	2	:~/Lin	1	:*	2	:/home/simowce/Lin	1	zsh	:
+window	0	1	1	:*	c6fd,124x37,0,0,0
+window	Linux C	1	0	:-	c6fe,124x37,0,0,1
+window	Linux C	2	1	:*	bdb5,124x37,0,0{52x37,0,0,10,71x37,53,0,11}
+state	Linux C	0

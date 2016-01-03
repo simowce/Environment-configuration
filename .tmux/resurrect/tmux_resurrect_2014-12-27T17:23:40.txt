@@ -1,0 +1,14 @@
+pane	ACM	1	:..M/LCD display	1	:*	1	:/home/simowce/Documents/ACM/LCD display	1	zsh	:./1
+./1
+pane	EDA	1	:~/Documents/EDA	1	:*	1	:/home/simowce/Documents/EDA	1	zsh	:
+pane	os	1	:..er9/HD driver	0	: 	1	:/home/simowce/Code-analysis-of-orange-os/chapter9/HD driver	1	zsh	:
+pane	os	2	:..ge/chapter9/a	0	: 	1	:/home/simowce/Documents/orange/chapter9/a	1	zsh	:
+pane	os	3	:~myblog	0	:-	1	:/home/simowce/simowce.github.com	1	zsh	:git push origin master
+pane	os	4	:..loud-packages	1	:*	1	:/home/simowce/bcloud-packages	1	zsh	:
+window	ACM	1	1	:*	c705,124x37,0,0,8
+window	EDA	1	1	:*	c6fe,124x37,0,0,1
+window	os	1	0	: 	c6ff,124x37,0,0,2
+window	os	2	0	: 	c700,124x37,0,0,3
+window	os	3	0	:-	c701,124x37,0,0,4
+window	os	4	1	:*	c702,124x37,0,0,5
+state	os	

@@ -1,0 +1,10 @@
+pane	Linux C	1	:~/Lin/test/fork	0	: 	1	:/home/simowce/Lin/test/fork	1	zsh	:
+pane	Linux C	2	:~myblog	0	:-	1	:/home/simowce/simowce.github.com	1	zsh	:
+pane	Linux C	3	:man	0	: 	1	:/home/simowce/Documents/Wifi/ap-hotspot-0.3	0	vim	:vim ap-hotspot
+pane	Linux C	3	:man	0	: 	2	:/usr/share/man	1	man	:man iptables
+pane	Linux C	4	:..ocuments/Wifi	1	:*	1	:/home/simowce/Documents/Wifi	1	zsh	:
+window	Linux C	1	0	: 	c6fe,124x37,0,0,1
+window	Linux C	2	0	:-	c6ff,124x37,0,0,2
+window	Linux C	3	0	: 	fad7,124x37,0,0{62x37,0,0,3,61x37,63,0,4}
+window	Linux C	4	1	:*	c702,124x37,0,0,5
+state	Linux C	

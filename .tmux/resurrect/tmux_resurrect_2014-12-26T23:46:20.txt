@@ -1,0 +1,11 @@
+pane	EDA	1	:~/Documents/EDA	1	:*	1	:/home/simowce/Documents/EDA	1	zsh	:
+pane	os	1	:..er9/HD driver	1	:*	1	:/home/simowce/Code-analysis-of-orange-os/chapter9/HD driver	1	zsh	:
+pane	os	2	:..ge/chapter9/a	0	: 	1	:/home/simowce/Documents/orange/chapter9/a	1	zsh	:
+pane	os	3	:~myblog	0	: 	1	:/home/simowce/simowce.github.com	1	zsh	:
+pane	os	4	:~/.vim/bundle	0	:-	1	:/home/simowce/.vim/bundle	1	zsh	:
+window	EDA	1	1	:*	c6fd,124x37,0,0,0
+window	os	1	1	:*	c700,124x37,0,0,3
+window	os	2	0	: 	c701,124x37,0,0,4
+window	os	3	0	: 	c702,124x37,0,0,5
+window	os	4	0	:-	c703,124x37,0,0,6
+state	os	

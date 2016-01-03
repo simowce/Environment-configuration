@@ -1,0 +1,14 @@
+pane	0	1	:~	1	:*	1	:/home/simowce	1	zsh	:
+pane	Linux C	1	:vim	1	:*	1	:/home/simowce/Lin/test/process	1	vim	:vim test.s
+pane	Linux C	2	:vim	0	: 	1	:/home/simowce/Documents/Wifi/hostapd-2.3/hostapd	1	vim	:vim main.c
+pane	Linux C	3	:..d-2.3/hostapd	0	: 	1	:/home/simowce/Documents/Wifi/hostapd-2.3/hostapd	1	zsh	:
+pane	Linux C	3	:..d-2.3/hostapd	0	: 	2	:/	0	zsh	:
+pane	Linux C	4	:vim	0	: 	1	:/home/simowce/Documents/Wifi	1	vim	:vim ap-hotspot-0.3/ap-hotspot
+pane	Linux C	5	:..d-2.3/hostapd	0	:-	1	:/home/simowce/Documents/Wifi/hostapd-2.3/hostapd	1	zsh	:
+window	0	1	1	:*	c6fd,124x37,0,0,0
+window	Linux C	1	1	:*	c6fe,124x37,0,0,1
+window	Linux C	2	0	: 	c6ff,124x37,0,0,2
+window	Linux C	3	0	: 	fad7,124x37,0,0{62x37,0,0,3,61x37,63,0,4}
+window	Linux C	4	0	: 	c702,124x37,0,0,5
+window	Linux C	5	0	:-	c703,124x37,0,0,6
+state	Linux C	Linux C

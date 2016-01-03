@@ -1,0 +1,18 @@
+pane	0	1	:~	1	:*	1	:/home/simowce	1	zsh	:
+pane	Linux C	1	:vim	0	: 	1	:/home/simowce/Lin/database	1	vim	:vim database.c
+pane	Linux C	2	:~myblog	0	: 	1	:/home/simowce/simowce.github.com	1	zsh	:
+pane	Linux C	3	:vim	0	: 	1	:/home/simowce/Documents/Wifi/ap-hotspot-0.3	0	vim	:vim ap-hotspot
+pane	Linux C	3	:vim	0	: 	2	:/home/simowce/Lin/database	1	zsh	:
+pane	Linux C	3	:vim	0	: 	3	:/home/simowce/Lin/just_a_test	0	vim	:vim check
+pane	Linux C	4	:vim	0	:-	1	:/home/simowce/Documents/Wifi/ap-hotspot-0.3	1	vim	:vim ap-hotspot
+pane	Linux C	5	:..n/just_a_test	1	:*	1	:/home/simowce/Ap-Hotspot	0	vim	:vim ap-hotspot
+pane	Linux C	5	:..n/just_a_test	1	:*	2	:/home/simowce/Lin/just_a_test	1	zsh	:vim check2
+pane	Linux C	6	:..html/polkit-1	0	: 	1	:/usr/share/doc/policykit-1-doc/html	1	zsh	:
+window	0	1	1	:*	c6fd,124x37,0,0,0
+window	Linux C	1	0	: 	ae5e,80x23,0,0,1
+window	Linux C	2	0	: 	ae5f,80x23,0,0,2
+window	Linux C	3	0	: 	5aed,124x37,0,0{62x37,0,0,3,61x37,63,0[61x17,63,0,4,61x19,63,18,5]}
+window	Linux C	4	0	:-	c703,124x37,0,0,6
+window	Linux C	5	1	:*	bdcb,124x37,0,0{62x37,0,0,8,61x37,63,0,10}
+window	Linux C	6	0	: 	c706,124x37,0,0,9
+state	Linux C	0

@@ -1,0 +1,15 @@
+pane	0	1	:..material/demo	1	:*	1	:/home/simowce/qml-material/demo	1	zsh	:
+pane	Linux C	1	:vim	0	: 	1	:/home/simowce/Lin/database	1	vim	:vim database.c
+pane	Linux C	2	:blog	0	:-	1	:/home/simowce/simowce.github.com	1	zsh	:
+pane	Linux C	3	:~/Lin/database	1	:*	1	:/home/simowce/Lin/database	1	zsh	:
+pane	Linux C	4	:vim	0	:#	1	:/home/simowce	1	vim	:vim hostapd.log
+pane	Linux C	5	:~/Lin/alpha	0	: 	1	:/home/simowce/Lin/alpha	1	zsh	:
+pane	Linux C	6	:..uments/sqlite	0	: 	1	:/home/simowce/Documents/sqlite	1	zsh	:
+window	0	1	1	:*	ae5d,80x23,0,0,0
+window	Linux C	1	0	: 	ae5e,80x23,0,0,1
+window	Linux C	2	0	:-	ae5f,80x23,0,0,2
+window	Linux C	3	1	:*	ae64,80x23,0,0,7
+window	Linux C	4	0	:#	ae61,80x23,0,0,4
+window	Linux C	5	0	: 	ae62,80x23,0,0,5
+window	Linux C	6	0	: 	ae63,80x23,0,0,6
+state	Linux C	0

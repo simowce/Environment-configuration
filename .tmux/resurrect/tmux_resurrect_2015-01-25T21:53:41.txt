@@ -1,0 +1,10 @@
+pane	Linux C	1	:~/Lin/test/echo	0	: 	1	:/home/simowce/Lin/test/echo	1	zsh	:
+pane	Linux C	2	:env	0	:#	1	:/home/simowce/Documents/Wifi	1	C:userssimowceLocal	:C:\users\simowce\Local Settings\Application Data\Youdao\Dict\Application\YodaoDict.exe                                      
+pane	Linux C	3	:hostapd	0	:-	1	:/home/simowce/Documents/Wifi/hostapd-2.3/hostapd	0	vim	:vim ap-hotspot
+pane	Linux C	3	:hostapd	0	:-	2	:	1	sudo	:vim utils/common.c
+pane	Linux C	4	:..ocuments/Wifi	1	:*	1	:/home/simowce/Documents/Wifi	1	zsh	:vim ap-hotspot-0.3/ap-hotspot
+window	Linux C	1	0	: 	c6fd,124x37,0,0,0
+window	Linux C	2	0	:#	c6fe,124x37,0,0,1
+window	Linux C	3	0	:-	fad3,124x37,0,0{62x37,0,0,2,61x37,63,0,4}
+window	Linux C	4	1	:*	c703,124x37,0,0,6
+state	Linux C	Linux C

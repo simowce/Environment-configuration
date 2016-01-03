@@ -1,0 +1,15 @@
+pane	0	1	:~	1	:*	1	:/home/simowce	1	zsh	:
+pane	Linux C	1	:vim	0	:-	1	:/home/simowce/Lin/alpha	1	vim	:vim pre_env.sh
+pane	Linux C	1	:vim	0	:-	2	:/home/simowce/Documents/Wifi/ap-hotspot-0.3	0	vim	:vim ap-hotspot
+pane	Linux C	2	:vim	0	: 	1	:/home/simowce/simowce.github.com	1	vim	:vim ./_posts/2015-02-07-vim-tips.md
+pane	Linux C	3	:~/Documents/PDF	0	: 	1	:/home/simowce/Documents/PDF	1	zsh	:
+pane	Linux C	3	:~/Documents/PDF	0	: 	2	:/home/simowce	0	vim	:vim ./ap-hotspot
+pane	Linux C	4	:..hrome/Default	1	:*	1	:/home/simowce/.config/google-chrome/Default	1	zsh	:
+pane	Linux C	5	:vim	0	: 	1	:/home/simowce/hostapd-statistics/hostapd-statistics/usr/bin	1	vim	:vim hostapd-statistics
+window	0	1	1	:*	c6fd,124x37,0,0,0
+window	Linux C	1	0	:-	7aee,124x37,0,0{62x37,0,0,8,61x37,63,0,9}
+window	Linux C	2	0	: 	c6ff,124x37,0,0,2
+window	Linux C	3	0	: 	fad7,124x37,0,0{62x37,0,0,3,61x37,63,0,4}
+window	Linux C	4	1	:*	c702,124x37,0,0,5
+window	Linux C	5	0	: 	c703,124x37,0,0,6
+state	Linux C	0
