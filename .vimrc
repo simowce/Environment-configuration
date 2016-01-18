@@ -4,7 +4,7 @@ syntax on
 filetype plugin indent on
 
 "airline
-set guifont=PowerlineSymbols\ for\ Powerline
+"set guifont=PowerlineSymbols\ for\ Powerline
 set nocompatible
 set t_Co=256
 let g:Powerline_symbols = 'fancy'
@@ -13,20 +13,19 @@ set nocompatible
 set encoding=utf-8
 set termencoding=utf-8
 
-if !exists('g:airline_symbols')
-  let g:airline_symbols = {}
-endif
-
-let g:airline#extensions#tabline#enabled = 1
-"let g:airline_theme = 'light'
-let g:airline_powerline_fonts = 1
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
+"if !exists('g:airline_symbols')
+  "let g:airline_symbols = {}
+"endif
+"let g:airline#extensions#tabline#enabled = 1
+""let g:airline_theme = 'light'
+"let g:airline_powerline_fonts = 1
+"let g:airline_left_sep = ''
+"let g:airline_left_alt_sep = ''
+"let g:airline_right_sep = ''
+"let g:airline_right_alt_sep = ''
+"let g:airline_symbols.branch = ''
+"let g:airline_symbols.readonly = ''
+"let g:airline_symbols.linenr = ''
 
 "set <leader>
 let mapleader=";"
@@ -45,9 +44,8 @@ map <F4> :!ctags -R --c-kinds=+px<CR>
 syntax on
 syntax enable
 au FileType c colorscheme desert
-au FileType python colorscheme Tomorrow-Night-Bright
-au FileType ruby colorscheme Tomorrow-Night-Bright
-
+"au FileType python colorscheme Tomorrow-Night-Bright
+"au FileType ruby colorscheme Tomorrow-Night-Bright
 colorscheme desert
 set background=dark
 
@@ -77,8 +75,7 @@ hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white
 nmap <Leader>t :TagbarToggle<CR>
 
 "YouCompleteMe
-"let g:ycm_global_ycm_extra_conf='~/.ycm_global_ycm_extra_conf.py'
-"let g:ycm_confirm_extra_conf=0
+let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf=0
 nnoremap <Leader>j :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
