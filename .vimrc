@@ -39,6 +39,8 @@ filetype plugin on
 filetype indent on
 set completeopt=longest,menu
 map <F4> :!ctags -R --c-kinds=+px<CR>
+map <Leader>n :tnext<CR>
+map <C-j> <C-]><CR>
 
 "syntax theme
 syntax on
@@ -47,7 +49,7 @@ au FileType c colorscheme desert
 "au FileType python colorscheme Tomorrow-Night-Bright
 "au FileType ruby colorscheme Tomorrow-Night-Bright
 colorscheme desert
-set background=dark
+"set background=dark
 
 "general
 set nu
@@ -66,10 +68,10 @@ nmap <C-n> :NERDTreeToggle<CR>
 "highlight current line
 set cursorline
 au WinLeave * set nocursorline nocursorcolumn
-au WinEnter * set cursorline cursorcolumn
-au FileType c set cursorcolumn
-hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white
-hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white
+au WinEnter * set cursorline "cursorcolumn
+"au FileType c set cursorcolumn
+"hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white
+"hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white
 
 "tagbar
 nmap <Leader>t :TagbarToggle<CR>
@@ -78,17 +80,20 @@ nmap <Leader>t :TagbarToggle<CR>
 let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf=0
 nnoremap <Leader>j :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <Leader>i :YcmCompleter GoTo<CR>
 
 "tab
-nmap <Leader>n :tabnext<CR><CR>
+"nmap <Leader>n :tabnext<CR><CR>
 nmap <Leader>m :tabp<CR><CR>
 nmap <leader>w :tabnew i 
 
 "auto-newline
-set textwidth=78
+"set textwidth=78
 
-"refresh
-nmap <F5> :AirlineRefresh<CR><CR>:AirlineRefresh<CR><CR>
+""refresh
+"nmap <F5> :AirlineRefresh<CR><CR>:AirlineRefresh<CR><CR>
+"Reload the .vimrc
+nmap <F5> :so ~/.vimrc<CR>
 
 "quite all & save all
 nmap <Leader>q :q<CR>
