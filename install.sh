@@ -107,11 +107,12 @@ install_oh_my_zsh()
 
 copy_conf_file()
 {
-	cp ./.vimrc ~/;
-	cp ./.zshrc ~/;
-	cp ./.tmux.conf ~/;
-	cp -r ./.vim ~/;
-	cp -r ./.tmux ~/;
+	cp ./.vimrc ~/
+	cp ./.zshrc ~/
+	cp ./.tmux.conf ~/
+	cp -r ./.vim ~/
+	cp -r ./.tmux ~/
+	cp ./.ycm_extra_conf.py ./
 }
 
 #install the Monaco font
@@ -137,7 +138,7 @@ install_Monaco_for_powerline()
 
 install_essential_package()
 {
-	sudo apt-get install vim vim-gnome ctags build-essential zsh tmux curl	sshfs wget git nautilus-open-terminal cmake python-dev android-tools-adb android-tools-fastboot cscope flex bison gperf libusb-0.1-4:i386 libxml2-utils xsltproc gcc-multilib libc6-dev-i386 libc6-i386 lzop autojump clang
+	sudo apt-get install vim vim-gnome ctags build-essential zsh tmux curl	sshfs wget git nautilus-open-terminal cmake python-dev android-tools-adb android-tools-fastboot cscope flex bison gperf libusb-0.1-4:i386 libxml2-utils xsltproc gcc-multilib libc6-dev-i386 libc6-i386 lzop autojump clang xclip xsel
 }
 
 install_YouCompleteMe()
