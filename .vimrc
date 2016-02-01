@@ -101,8 +101,10 @@ nmap <Leader>w :wall<CR>
 nmap <Leader>d :wq<CR>
 
 "make all
-nmap <F9> :make<CR><CR><CR>:cw<CR><CR>
-nmap <F10> :make build<CR><CR><CR>:cw<CR><CR>
+"nmap <F9> :make<CR><CR><CR>:cw<CR><CR>
+"nmap <F10> :make build<CR><CR><CR>:cw<CR><CR>
+nmap <F9> :make<CR>:cw<CR>
+nmap <C-c> :cclose<CR>
 
 ""cw exchange
 "nmap <Leader>j <C-w>j
@@ -166,3 +168,14 @@ nnoremap <Leader>tl :TaskList<CR>
 
 "a.vim
 map <Leader>h :AV<CR>
+
+"show the current function
+fun! ShowFuncName()
+  let lnum = line(".")
+  let col = col(".")
+  echohl ModeMsg
+  echo getline(search("^[^ \t#/]\\{2}.*[^:]\s*$", 'bW'))
+  echohl None
+  call search("\\%" . lnum . "l" . "\\%" . col . "c")
+endfun
+map f :call ShowFuncName() <CR>
