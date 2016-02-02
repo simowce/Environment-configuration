@@ -64,16 +64,16 @@ flags = [
 # For a C project, you would set this to 'c' instead of 'c++'.
 '-x',
 'c',
-'-I'
-'./include'
-'-I'
-'/usr/include'
-'-I'
-'/usr/local/include'
-'-I'
-'/usr/lib/gcc/x86_64-linux-gnu/4.8.4/include'
-'-I'
-'/usr/lib/gcc/x86_64-linux-gnu/4.8/include'
+'-I',
+'./include',
+'-I',
+'/usr/include',
+'-I',
+'/usr/local/include',
+'-I',
+'/usr/lib/gcc/x86_64-linux-gnu/4.8.4/include',
+'-I',
+'/usr/lib/gcc/x86_64-linux-gnu/4.8/include',
 '-I',
 'include/',
 '-I',

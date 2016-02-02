@@ -118,6 +118,7 @@ copy_conf_file()
 install_tmux_plugin()
 {
 	echo "Installing tmux plugin..."
+	mkdir ~/.tmux
 	cd ~/.tmux
 	#tmux-powerline
 	git clone https://github.com/erikw/tmux-powerline
