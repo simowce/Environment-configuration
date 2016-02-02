@@ -110,9 +110,9 @@ copy_conf_file()
 	cp ./.vimrc ~/
 	cp ./.zshrc ~/
 	cp ./.tmux.conf ~/
-	#cp -r ./.vim ~/
+	cp -r ./.vim ~/
 	#cp -r ./.tmux ~/
-	cp ./.ycm_extra_conf.py ./
+	cp ./.ycm_extra_conf.py ~/
 }
 
 install_tmux_plugin()
@@ -133,8 +133,8 @@ install_vim_plugin()
 	git clone git://github.com/jiangmiao/auto-pairs.git
 	#ctrlp
 	git clone https://github.com/ctrlpvim/ctrlp.vim
-	#nerdcommenter
-	git clone https://github.com/scrooloose/nerdcommenter.git
+	##nerdcommenter
+	#git clone https://github.com/scrooloose/nerdcommenter.git
 	#vim-powerline
 	git clone https://github.com/Lokaltog/vim-powerline
 	#nerd-tree
@@ -178,9 +178,9 @@ main()
 	install_Monaco;
 	install_Monaco_for_powerline;
 	install_oh_my_zsh;
+	copy_conf_file;
 	install_vim_plugin;
 	install_tmux_plugin;
-	copy_conf_file;
 	install_YouCompleteMe;
 }
 
