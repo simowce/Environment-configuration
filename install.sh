@@ -110,9 +110,37 @@ copy_conf_file()
 	cp ./.vimrc ~/
 	cp ./.zshrc ~/
 	cp ./.tmux.conf ~/
-	cp -r ./.vim ~/
-	cp -r ./.tmux ~/
+	#cp -r ./.vim ~/
+	#cp -r ./.tmux ~/
 	cp ./.ycm_extra_conf.py ./
+}
+
+install_tmux_plugin()
+{
+	echo "Installing tmux plugin..."
+	cd ~/.tmux
+	#tmux-powerline
+	git clone https://github.com/erikw/tmux-powerline
+	#tmux-yank
+	git clone https://github.com/tmux-plugins/tmux-yank
+}
+
+install_vim_plugin()
+{
+	echo "Installing powerful vim plugin..."
+	cd ~/.vim/bundle
+	#auto-pairs
+	git clone git://github.com/jiangmiao/auto-pairs.git
+	#ctrlp
+	git clone https://github.com/ctrlpvim/ctrlp.vim
+	#nerdcommenter
+	git clone https://github.com/scrooloose/nerdcommenter.git
+	#vim-powerline
+	git clone https://github.com/Lokaltog/vim-powerline
+	#nerd-tree
+	git clone https://github.com/scrooloose/nerdtree
+	#YCM-Generator
+	git clone https://github.com/rdnetto/YCM-Generator
 }
 
 #install the Monaco font
@@ -121,16 +149,9 @@ install_Monaco()
 	curl -kL https://raw.github.com/cstrap/monaco-font/master/install-font-ubuntu.sh | bash;
 }
 
-#Dependencies of powerline
-install_depen()
-{
-	sudo apt-get install python-fontforge;
-}
-
 #To let the powerline status bar's font more beatiful, so we need to install patched font
 install_Monaco_for_powerline()
 {
-	install_depen;
 	mkdir ~/.fonts;
 	cp ./Monaco_Linux-Powerline.ttf ~/.fonts;
 	sudo fc-cache -vf;
@@ -138,27 +159,29 @@ install_Monaco_for_powerline()
 
 install_essential_package()
 {
-	sudo apt-get install vim vim-gnome ctags build-essential zsh tmux curl	sshfs wget git nautilus-open-terminal cmake python-dev android-tools-adb android-tools-fastboot cscope flex bison gperf libusb-0.1-4:i386 libxml2-utils xsltproc gcc-multilib libc6-dev-i386 libc6-i386 lzop autojump clang xclip xsel dos2unix
+	sudo apt-get install vim vim-gnome ctags build-essential zsh tmux curl	sshfs wget git nautilus-open-terminal cmake python-dev android-tools-adb android-tools-fastboot cscope flex bison gperf libusb-0.1-4:i386 libxml2-utils xsltproc gcc-multilib libc6-dev-i386 libc6-i386 lzop autojump clang xclip xsel dos2unix python-fontforge tree
 }
 
 install_YouCompleteMe()
 {
 	cd ~/.vim/bundle/
-	echo "Cloning YouCompleteMe ..."
 	git clone https://www.github.com/Valloric/YouCompleteMe.git;
 	echo "Have been clone YouCompleteMe, then we need to do some update."
 	cd ~/.vim/bundle/YouCompleteMe
 	git submodule update --init --recursive
-	./install.py --clang-completer
+	./install.py --clang-completer #--system-libclang
 }
 
 main()
 {
 	install_essential_package;
-	#install_Monaco;
-	#install_Monaco_for_powerline;
+	install_Monaco;
+	install_Monaco_for_powerline;
 	install_oh_my_zsh;
+	install_vim_plugin;
+	install_tmux_plugin;
 	copy_conf_file;
+	install_YouCompleteMe;
 }
 
 main;
