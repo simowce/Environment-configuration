@@ -54,7 +54,7 @@ alias mountS="sudo mount /dev/sda2 /mnt/System && cd /mnt/System"
 alias umountS="cd ~ && umount /mnt/System"
 alias standby="xset dpmp force standby"
 alias mf="vim Makefile"
-alias go="cd ~ && ./go && cd ~/APUE"
+#alias go="cd ~ && ./go && cd ~/APUE"
 alias ma="vim Makefile"
 
 #startup
@@ -65,6 +65,12 @@ mkd() { mkdir -p "$1"; cd "$1"; }
 cls() { cd "$1"; ls; }
 gmail() { curl -u "$1" --silent "https://mail.google.com/mail/feed/atom" | sed -e 's/<\/fullcount.*/\n/' | sed -e 's/.*fullcount>//'}
 CC() {gcc -o "$1" "$1.c";}
+un() {
+	zip_log=$1
+	log_file=`unzip $zip_log | grep "bugreport_" | sed 's/inflating: //g'`
+	vim $(echo $log_file | sed 's/ //g')
+	echo "The log name is $log_file"
+}
 
 #map some file
 alias -s c=vim
