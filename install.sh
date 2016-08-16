@@ -160,29 +160,47 @@ install_Monaco_for_powerline()
 
 install_essential_package()
 {
-	sudo apt-get install vim vim-gnome ctags build-essential zsh tmux curl	sshfs wget git nautilus-open-terminal cmake python-dev android-tools-adb android-tools-fastboot cscope flex bison gperf libusb-0.1-4:i386 libxml2-utils xsltproc gcc-multilib libc6-dev-i386 libc6-i386 lzop autojump clang xclip xsel dos2unix python-fontforge tree
+	sudo apt-get install vim vim-gnome ctags build-essential zsh tmux curl	sshfs wget git nautilus-open-terminal cmake python-dev android-tools-adb android-tools-fastboot cscope flex bison gperf libusb-0.1-4:i386 libxml2-utils xsltproc gcc-multilib libc6-dev-i386 libc6-i386 lzop autojump clang xclip xsel dos2unix python-fontforge tree openjdk-7-jdk
 }
 
 install_YouCompleteMe()
 {
 	cd ~/.vim/bundle/
 	git clone https://www.github.com/Valloric/YouCompleteMe.git;
-	echo "Have been clone YouCompleteMe, then we need to do some update."
+	echo "YouCompleteMe has beed cloned, then we need to do some update."
 	cd ~/.vim/bundle/YouCompleteMe
 	git submodule update --init --recursive
 	./install.py --clang-completer #--system-libclang
 }
 
-main()
+install_common_use_software()
 {
-	install_essential_package;
-	install_Monaco;
-	install_Monaco_for_powerline;
-	install_oh_my_zsh;
-	copy_conf_file;
-	install_vim_plugin;
-	install_tmux_plugin;
-	install_YouCompleteMe;
+	# 安装搜狗输入法
+	echo "Installing sogou input..."
+	wget 'http://pinyin.sogou.com/linux/download.php?f=linux&bit=64' -O sogou.deb
+	sudo chmod +x ./sogou.deb
+	sudo dpkg -i sogou.deb
+	rm sogou.deb
+	# 安装 Chrome
+	echo "Installing Chrome brower..."
+	wget 'https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb' -O chrome.deb
+	sudo chmod +x ./chrome.deb
+	sudo dpkg -i chrome.deb
+	rm chrome.deb
+	# TODO: WPS 的下载链接随着更新而改变，抽空研究一下用爬虫的方法来下载
 }
 
-main;
+main()
+{
+	install_essential_package
+	install_common_use_software
+	install_Monaco
+	install_Monaco_for_powerline
+	install_oh_my_zsh
+	copy_conf_file
+	install_vim_plugin
+	install_tmux_plugin
+	install_YouCompleteMe
+}
+
+main
