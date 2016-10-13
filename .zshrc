@@ -16,6 +16,12 @@ ZSH_THEME="avit"
 # swap the ctrl key and the cap key, see "man xkeyboard-config"
 setxkbmap -option ctrl:swapcaps
 
+##JDK
+#export JAVA_HOME=/usr/lib/jvm/java
+#export JRE_HOME=${JAVA_HOME}/jre
+#export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+#export PATH=${JAVA_HOME}/bin:$PATH
+
 #map some key
 alias ll='ls -al --color'
 alias sql='sqlite3'
@@ -34,7 +40,6 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias tls="tmux ls"
 alias killsession="tmux kill-session -t"
 alias vrc="vim ~/.vimrc"
-alias zrc="vim ~/.zshrc"
 alias trc="vim ~/.tmux.conf"
 alias volume="amixer get Master | sed '1,4 d' | cut -d [ -f 2 | cut -d ] -f 1"
 alias wifion="sudo ap-hotspot start"
@@ -65,11 +70,32 @@ mkd() { mkdir -p "$1"; cd "$1"; }
 cls() { cd "$1"; ls; }
 gmail() { curl -u "$1" --silent "https://mail.google.com/mail/feed/atom" | sed -e 's/<\/fullcount.*/\n/' | sed -e 's/.*fullcount>//'}
 CC() {gcc -o "$1" "$1.c";}
+delf() {
+	ls -l | awk '$1 ~ /d[a-z\-]{6}/ {printf "%s %s\n", $1,$9}' | awk '{print $2}' | xargs rm -r
+}
+latest() {
+	ls -lt | head -n 2 | grep -v total | awk '{print $9}'
+}
 un() {
 	zip_log=$1
 	log_file=`unzip $zip_log | grep "bugreport_" | sed 's/inflating: //g'`
-	vim $(echo $log_file | sed 's/ //g')
 	echo "The log name is $log_file"
+	vim $(echo $log_file | sed 's/ //g')
+}
+unl() {
+	delf
+	zip_log=`latest`
+	echo "The zip name is $zip_log"
+	log_file=`unzip $zip_log | grep "bugreport_" | sed 's/inflating: //g'`
+	echo "The log name is $log_file"
+	delf
+	vim $(echo $log_file | sed 's/ //g')
+	delf
+}
+zrc(){
+	vim ~/.zshrc
+	source ~/.zshrc
+	echo "Done: update zsh configure file."
 }
 
 #map some file
@@ -159,3 +185,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
