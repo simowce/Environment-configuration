@@ -60,6 +60,7 @@ set autoindent
 set cindent
 set hls
 set noeb
+set expandtab
 
 "NERDTree
 "let NERDTreeShowHidden=1
