@@ -160,7 +160,7 @@ install_Monaco_for_powerline()
 
 install_essential_package()
 {
-	sudo apt-get install vim vim-gnome ctags build-essential zsh tmux curl	sshfs wget git nautilus-open-terminal cmake python-dev android-tools-adb android-tools-fastboot cscope flex bison gperf libusb-0.1-4:i386 libxml2-utils xsltproc gcc-multilib libc6-dev-i386 libc6-i386 lzop autojump clang xclip xsel dos2unix python-fontforge tree openjdk-7-jdk
+	sudo apt-get install vim vim-gnome ctags build-essential zsh tmux curl	sshfs wget git cmake python-dev android-tools-adb android-tools-fastboot cscope flex bison gperf autojump clang xclip dos2unix python-fontforge tree
 }
 
 install_YouCompleteMe()
