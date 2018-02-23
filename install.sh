@@ -107,12 +107,13 @@ install_oh_my_zsh()
 
 copy_conf_file()
 {
-	cp ./.vimrc ~/
+	# cp ./.vimrc ~/
 	cp ./.zshrc ~/
 	cp ./.tmux.conf ~/
 	cp -r ./.vim ~/
 	#cp -r ./.tmux ~/
 	cp ./.ycm_extra_conf.py ~/
+    cp ./init.vim ~/.SpaceVim.d/
 }
 
 install_tmux_plugin()
@@ -163,16 +164,6 @@ install_essential_package()
 	sudo apt-get install vim vim-gnome ctags build-essential zsh tmux curl	sshfs wget git cmake python-dev android-tools-adb android-tools-fastboot cscope flex bison gperf autojump clang xclip dos2unix python-fontforge tree
 }
 
-install_YouCompleteMe()
-{
-	cd ~/.vim/bundle/
-	git clone https://www.github.com/Valloric/YouCompleteMe.git;
-	echo "YouCompleteMe has beed cloned, then we need to do some update."
-	cd ~/.vim/bundle/YouCompleteMe
-	git submodule update --init --recursive
-	./install.py --clang-completer #--system-libclang
-}
-
 install_common_use_software()
 {
 	# 安装搜狗输入法
@@ -190,6 +181,12 @@ install_common_use_software()
 	# TODO: WPS 的下载链接随着更新而改变，抽空研究一下用爬虫的方法来下载
 }
 
+install_spacevim()
+{
+    curl -sLf https://spacevim.org/install.sh | bash
+    vim
+}
+
 main()
 {
 	install_essential_package
@@ -197,10 +194,10 @@ main()
 	install_Monaco
 	install_Monaco_for_powerline
 	install_oh_my_zsh
+    install_spacevim
 	copy_conf_file
 	install_vim_plugin
 	install_tmux_plugin
-	install_YouCompleteMe
 }
 
 main
