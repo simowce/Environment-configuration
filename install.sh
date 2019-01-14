@@ -107,13 +107,13 @@ install_oh_my_zsh()
 
 copy_conf_file()
 {
-	# cp ./.vimrc ~/
+	cp ./.vimrc ~/
 	cp ./.zshrc ~/
 	cp ./.tmux.conf ~/
-	cp -r ./.vim ~/
-	#cp -r ./.tmux ~/
+	# cp -r ./.vim ~/
+	cp -r ./.tmux ~/
 	cp ./.ycm_extra_conf.py ~/
-    cp ./init.vim ~/.SpaceVim.d/
+    # cp ./init.vim ~/.SpaceVim.d/
 }
 
 install_tmux_plugin()
@@ -194,9 +194,8 @@ main()
 	install_Monaco
 	install_Monaco_for_powerline
 	install_oh_my_zsh
-    install_spacevim
 	copy_conf_file
-	install_vim_plugin
+	# install_vim_plugin
 	install_tmux_plugin
 }
 

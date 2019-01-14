@@ -14,13 +14,13 @@ ZSH_THEME="avit"
 #fi
 
 # swap the ctrl key and the cap key, see "man xkeyboard-config"
-setxkbmap -option ctrl:swapcaps
+# setxkbmap -option ctrl:swapcaps
 
 ##JDK
-#export JAVA_HOME=/usr/lib/jvm/java
-#export JRE_HOME=${JAVA_HOME}/jre
-#export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
-#export PATH=${JAVA_HOME}/bin:$PATH
+# export JAVA_HOME=/home/simowce/Downloads/jdk1.7.0_80/
+# export JRE_HOME=${JAVA_HOME}/jre
+# export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib
+# export PATH=${JAVA_HOME}/bin:$PATH
 
 #map some key
 alias ll='ls -al --color'
@@ -61,6 +61,12 @@ alias standby="xset dpmp force standby"
 alias mf="vim Makefile"
 #alias go="cd ~ && ./go && cd ~/APUE"
 alias ma="vim Makefile"
+alias as="adb wait-for-device && adb root && adb shell"
+alias perfdump="adb wait-for-device && adb root && adb shell am start com.qualcomm.qti.perfdump/.MainActivity"
+alias al="adb logcat | grep "
+alias systrace="/home/simowce/Android/Sdk/platform-tools/systrace/systrace.py"
+alias gc="git clone"
+alias gs="git status"
 
 #startup
 #go
@@ -96,6 +102,39 @@ zrc(){
 	vim ~/.zshrc
 	source ~/.zshrc
 	echo "Done: update zsh configure file."
+}
+gls() {
+    adb wait-for-device
+    adb root
+    atrace=`adb shell "ls -t /sdcard/Perfdump/ | head -n 1"`
+    adb pull /sdcard/Perfdump/$atrace /home/simowce/Work/Game/
+    file_name=`echo $atrace | sed 's/\.*//g'`
+    systrace --from-file /home/simowce/Work/Game/$atrace -o /home/simowce/Work/Game/$file_name.html
+    xopen /home/simowce/Work/Game/$file_name.html
+}
+k() {
+    adb wait-for-device
+    adb root
+    pid=`adb shell 'ps -e' | grep $1 | awk '{print $2}'`
+    adb shell kill $pid
+    pid=`adb shell 'ps ' | grep $1 | awk '{print $2}'`
+    adb shell kill $pid
+}
+wt() {
+    link="http://file.market.xiaomi.com/download/AppStore/"$1
+    wget $link
+}
+st() {
+    /home/simowce/Android/Sdk/platform-tools/systrace/systrace.py gfx input view webview wm am sm audio video camera hal app res dalvik rs bionic power pm ss database network adb sched irq i2c freq idle disk mmc load sync workq memreclaim regulators binder_driver binder_lock pagecache -t $1 -o ~/$2.html
+}
+ac() {
+    adb logcat -c
+}
+arr() {
+    adb root && adb remount
+}
+are() {
+    adb reboot
 }
 
 #map some file
@@ -188,3 +227,4 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export TERM='xterm-256color'
+export ANDROID_HOME="/home/simowce/Android/Sdk"
